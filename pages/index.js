@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
           <script type='text/javascript'>
 
-           ;(function(p,l,o,w,i,n,g) {
+           function(p,l,o,w,i,n,g) {
                 if(!p[i]) {
                     p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
                     p.GlobalSnowplowNamespace.push(i);p[i]=function() {
@@ -20,7 +20,7 @@ export default function Home() {
                     n.async=1;
                     n.src=w;
                     g.parentNode.insertBefore(n,g)
-                }}(window,document,"script",'//cdn.jsdelivr.net/gh/snowplow/sp-js-assets@2.15.0/sp.js',"snowplow"));
+                }}(window,document,"script",'//cdn.jsdelivr.net/gh/snowplow/sp-js-assets@2.15.0/sp.js',"snowplow");
 
               // Initialize a tracker
               window.snowplow('newTracker', 'cf', 'webhooks.fivetran.com/snowplow/ee56030d-cc8b-4998-b101-82ac53a36ece', {
